@@ -1,0 +1,45 @@
+.wrapper {
+    --translate-info-transfrom-y: 6%;
+
+    display: flex;
+    align-items: center;
+    padding: 4px 12px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+
+    &:hover {
+        background: rgba(22, 24, 35, 0.04);
+    }
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+
+.name {
+    transform: translateY(var(--translate-info-transfrom-y));
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.check {
+    margin-left: 6px;
+    color: rgb(32, 213, 236);
+}
+
+.username {
+    transform: translateY(calc(var(--translate-info-transfrom-y) * -1));
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: rgba(22, 24, 35, 0.5);
+}
