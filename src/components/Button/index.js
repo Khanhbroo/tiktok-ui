@@ -19,7 +19,6 @@ const Button = ({
     leftIcon,
     rightIcon,
     onClick,
-    haha,
     ...passProps
 }) => {
     let Comp = 'button';
