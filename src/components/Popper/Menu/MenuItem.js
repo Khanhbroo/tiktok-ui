@@ -5,9 +5,14 @@ import styles from './Menu.module.scss';
 // Bind to help us use snake case in module.scss
 const cx = classNames.bind(styles);
 
-const MenuItem = ({ data }) => {
+const MenuItem = ({ data, handleClick }) => {
     return (
-        <Button className={cx('menu-item')} leftIcon={data.icon} to={data.to}>
+        <Button
+            className={cx('menu-item')}
+            leftIcon={data.icon}
+            to={data.to}
+            onClick={handleClick}
+        >
             {data.title}
         </Button>
     );
